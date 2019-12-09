@@ -16,8 +16,8 @@ export class HeightEqualExample extends React.Component {
     title: "HeightEqualExample"
   };
 
-  _sectionCount = 10;
-  _rowCount = 10;
+  _sectionCount = 100;
+  _rowCount = 100;
 
   constructor(props) {
     super(props);

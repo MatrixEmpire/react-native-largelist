@@ -1,0 +1,8 @@
+node_modules/
+**/*.xcodeproj/xcuserdata/
+**/*.xcodeproj/xcshareddata/
+ios/build/
+**/*.xcodeproj/project.xcworkspace/
+.DS_Store
+.vscode
+.ide
