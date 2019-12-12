@@ -29,7 +29,7 @@ export class StickyFormExample extends React.Component {
         heightForSection={() => 40}
         renderHeader={this._renderHeader}
         renderSection={this._renderSection}
-        heightForIndexPath={() => 50}
+        heightForRowAtIndexPath={() => 50}
         renderIndexPath={this._renderItem}
         onRefresh={() => {
           setTimeout(() => this._list.endRefresh(), 2000);

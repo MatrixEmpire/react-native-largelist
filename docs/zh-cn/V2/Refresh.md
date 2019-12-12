@@ -22,7 +22,7 @@ It is easy to pull to refresh, (https://bolan9999.github.io/react-native-spring-
     data={this.state.data}
     heightForSection={() => 40}
     renderSection={this._renderSection}
-    heightForIndexPath={() => 60}
+    heightForRowAtIndexPath={() => 60}
     renderIndexPath={this._renderItem}
     refreshHeaderHeight={60}
     refreshHeader={NormalHeader}

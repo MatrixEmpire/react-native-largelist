@@ -12,7 +12,7 @@ tapToHideKeyboard | boolean | true | 点击LargeList是否收起键盘
 data | { items: any[] }[] | 必需 | 列表的数据源
 heightForSection | (section: number) => number | ()=>0 | 返回列表每一组组头高度的函数
 renderSection | (section: number) => React.ReactElement &lt;any> | ()=>null | 每一组组头的render函数
-heightForIndexPath | (indexPath: IndexPath) => number | 必需 | 返回列表每一行高度的函数
+heightForRowAtIndexPath | (indexPath: IndexPath) => number | 必需 | 返回列表每一行高度的函数
 renderIndexPath | (indexPath: IndexPath) => React.ReactElement &lt;any> | 必需 | 每一行的render函数
 renderHeader | ()=> React.ReactElement &lt;any> | undefined | 列表的头部组件函数
 renderFooter | ()=> React.ReactElement &lt;any> | undefined | 列表的尾部组件函数

@@ -33,7 +33,7 @@ export class MessageExample extends React.Component {
         ref={ref => (this.largeList = ref)}
         heightForSection={() => 0}
         renderSection={() => null}
-        heightForIndexPath={() => 88}
+        heightForRowAtIndexPath={() => 88}
         renderIndexPath={this._renderItem}
         data={this.messages}
       />

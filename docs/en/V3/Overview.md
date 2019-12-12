@@ -13,7 +13,7 @@ data | { items: any[] }[] | required | The data source of the large list. The ou
 contentStyle | ViewStyle | { height } | The content view style of LargeList.
 heightForSection | (section: number) => number | ()=>0 | The height function for every Section
 renderSection | (section: number) => React.ReactElement &lt;any> | ()=>null | The render function for every Section
-heightForIndexPath | (indexPath: IndexPath) => number | required | The height function for every IndexPath
+heightForRowAtIndexPath | (indexPath: IndexPath) => number | required | The height function for every IndexPath
 renderIndexPath | (indexPath: IndexPath) => React.ReactElement &lt;any> | required | The render function for every IndexPath
 renderHeader | ()=> React.ReactElement &lt;any> | undefined | The render function of largelist header
 renderFooter | ()=> React.ReactElement &lt;any> | undefined | The render function of largelist footer
@@ -30,7 +30,7 @@ renderScaleHeaderBackground | ()=> React.ReactElement &lt;any> | undefined | Ren
     data={data}
     heightForSection={() => 50}
     renderSection={this._renderSection}
-    heightForIndexPath={() => 50}
+    heightForRowAtIndexPath={() => 50}
     renderIndexPath={this._renderIndexPath}
 />
 ```

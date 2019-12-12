@@ -16,8 +16,8 @@ export class HeightEqualExample extends React.Component {
     title: "HeightEqualExample"
   };
 
-  _sectionCount = 100;
-  _rowCount = 100;
+  _sectionCount = 26;
+  _rowCount = 1000;
 
   constructor(props) {
     super(props);
@@ -39,7 +39,9 @@ export class HeightEqualExample extends React.Component {
         initialContentOffset={{x:0,y:3000}}
         heightForSection={() => 50}
         renderSection={this._renderSection}
-        heightForIndexPath={() => 50}
+        equalRowHeight={() => 50}
+        equalSectionHeight={() => 50}
+        heightForRowAtIndexPath={() => 50}
         renderIndexPath={this._renderIndexPath}
         renderHeader={this._renderHeader}
         renderFooter={this._renderFooter}

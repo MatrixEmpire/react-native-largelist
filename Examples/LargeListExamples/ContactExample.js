@@ -29,7 +29,7 @@ export class ContactExample extends React.Component {
       <LargeList
         heightForSection={() => 40}
         renderSection={this._renderSection}
-        heightForIndexPath={() => 60}
+        heightForRowAtIndexPath={() => 60}
         renderIndexPath={this._renderItem}
         data={this.state.data}
         renderHeader={this._renderHeader}

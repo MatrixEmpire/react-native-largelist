@@ -53,7 +53,7 @@ export class MenuListExample extends React.Component {
           showsVerticalScrollIndicator={false}
           bounces={false}
           data={leftData}
-          heightForIndexPath={() => 80}
+          heightForRowAtIndexPath={() => 80}
           renderIndexPath={this.renderIndexes}
         />
         <LargeList
@@ -62,7 +62,7 @@ export class MenuListExample extends React.Component {
           data={foods}
           heightForSection={() => 36}
           renderSection={this.renderSection}
-          heightForIndexPath={() => 96}
+          heightForRowAtIndexPath={() => 96}
           renderIndexPath={this.renderItem}
         />
       </View>

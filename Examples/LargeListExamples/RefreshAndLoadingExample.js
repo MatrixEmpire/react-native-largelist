@@ -32,7 +32,7 @@ export class RefreshAndLoadingExample extends React.Component {
         data={this.state.data}
         heightForSection={() => 40}
         renderSection={this._renderSection}
-        heightForIndexPath={() => 60}
+        heightForRowAtIndexPath={() => 60}
         renderIndexPath={this._renderItem}
         refreshHeader={NormalHeader}
         onRefresh={this._onRefresh}

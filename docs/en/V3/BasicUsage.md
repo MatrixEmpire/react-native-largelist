@@ -31,7 +31,7 @@ export class HeightEqualExample extends React.Component {
         data={data}
         heightForSection={() => 50}
         renderSection={this._renderSection}
-        heightForIndexPath={() => 50}
+        heightForRowAtIndexPath={() => 50}
         renderIndexPath={this._renderIndexPath}
       />
     );

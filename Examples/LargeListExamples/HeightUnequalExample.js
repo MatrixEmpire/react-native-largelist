@@ -41,7 +41,7 @@ export class HeightUnequalExample extends React.Component {
         ref={ref => (this._list = ref)}
         heightForSection={() => 50}
         renderSection={this._renderSection}
-        heightForIndexPath={({ section: section, row: row }) => (row % 2 ? 50 : 100)}
+        heightForRowAtIndexPath={({ section: section, row: row }) => (row % 2 ? 50 : 100)}
         renderIndexPath={this._renderIndexPath}
         refreshHeader={CommonLottieHeader}
         loadingFooter={CommonLottieFooter}

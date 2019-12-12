@@ -49,7 +49,7 @@ export class Group extends React.Component<GroupPropType> {
   }
 
   render() {
-    const { indexes, heightForSection, heightForIndexPath, renderIndexPath, inverted } = this.props;
+    const { indexes, heightForSection, heightForRowAtIndexPath, renderIndexPath, inverted } = this.props;
     if (this._currentIndex >= indexes.length) return null;
     this._margin = 0;
     return indexes[this._currentIndex].map((indexPath, index) => {
@@ -57,7 +57,7 @@ export class Group extends React.Component<GroupPropType> {
         this._margin = heightForSection(indexPath.section);
         return null;
       }
-      const height = heightForIndexPath(indexPath);
+      const height = heightForRowAtIndexPath(indexPath);
       if (height === 0) return null;
       const cell = React.Children.only(renderIndexPath(indexPath));
       const marginTop = this._margin;

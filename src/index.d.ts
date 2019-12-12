@@ -22,7 +22,7 @@ declare module "react-native-largelist-v3" {
     data: LargeListDataType;
     heightForSection?: (section: number) => number;
     renderSection?: (section: number) => React.ReactElement<any>;
-    heightForIndexPath: (indexPath: IndexPath) => number;
+    heightForRowAtIndexPath: (indexPath: IndexPath) => number;
     renderIndexPath: (indexPath: IndexPath) => React.ReactElement<any>;
     renderHeader?: () => React.ReactElement<any>;
     renderFooter?: () => React.ReactElement<any>;

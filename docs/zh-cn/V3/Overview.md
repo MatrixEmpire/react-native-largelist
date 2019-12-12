@@ -13,7 +13,7 @@ data | { items: any[] }[] | 必需 | 列表的数据源,外层数组表示吸顶
 contentStyle | ViewStyle | { height } | LargeList的content view样式
 heightForSection | (section: number) => number | ()=>0 | 返回列表每一组组头高度的函数
 renderSection | (section: number) => React.ReactElement &lt;any> | ()=>null | 每一组组头的render函数
-heightForIndexPath | (indexPath: IndexPath) => number | 必需 | 返回列表每一行高度的函数
+heightForRowAtIndexPath | (indexPath: IndexPath) => number | 必需 | 返回列表每一行高度的函数
 renderIndexPath | (indexPath: IndexPath) => React.ReactElement &lt;any> | 必需 | 每一行的render函数
 renderHeader | ()=> React.ReactElement &lt;any> | undefined | 列表的头部组件函数
 renderFooter | ()=> React.ReactElement &lt;any> | undefined | 列表的尾部组件函数
@@ -27,7 +27,7 @@ inverted | boolean | false | 翻转滚动方向，适配聊天App，查看示例
     data={data}
     heightForSection={() => 50}
     renderSection={this._renderSection}
-    heightForIndexPath={() => 50}
+    heightForRowAtIndexPath={() => 50}
     renderIndexPath={this._renderIndexPath}
 />
 ```

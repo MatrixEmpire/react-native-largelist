@@ -28,7 +28,7 @@ export class ChatExample extends React.Component {
           inverted
           style={styles.list}
           data={this.state.histories}
-          heightForIndexPath={() => 50}
+          heightForRowAtIndexPath={() => 50}
           renderIndexPath={this._renderItem}
         />
         <View style={styles.inputContainer}>
