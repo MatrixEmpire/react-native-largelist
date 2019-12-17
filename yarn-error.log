@@ -1,0 +1,61 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /usr/local/flutter/bin:/Users/jhyi/.rvm/gems/ruby-2.5.1/bin:/Users/jhyi/.rvm/gems/ruby-2.5.1@global/bin:/Users/jhyi/.rvm/rubies/ruby-2.5.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Library/Apple/bin:/opt/salt/bin:/usr/local/sbin:/usr/local/flutter/bin:/Users/jhyi/.rvm/gems/ruby-2.5.1/bin:/Users/jhyi/.rvm/gems/ruby-2.5.1@global/bin:/Users/jhyi/.rvm/rubies/ruby-2.5.1/bin:/Users/jhyi/.rvm/bin:/Users/jhyi/Library/Android/sdk/tools:/Users/jhyi/Library/Android/sdk/platform-tools:/Users/jhyi/.rvm/bin:/Users/jhyi/.rvm/bin:/Users/jhyi/Library/Android/sdk/tools:/Users/jhyi/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.9.4
+
+Node version: 
+  12.13.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/jhyi/WorkSpace/react-native-largelist/package.json: Unexpected token / in JSON at position 319
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1130:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:92:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:103:13
+
+npm manifest: 
+  {
+    "name": "large-list-demo",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+      "start": "node node_modules/react-native/local-cli/cli.js start",
+      "test": "jest",
+      "lint": "eslint ."
+    },
+    "dependencies": {
+      "lottie-react-native": "^2.6.0",
+      "react": "16.9.0",
+      "react-native": "0.61.5",
+      // "react-native-largelist": "git+https://github.com/MatrixEmpire/react-native-spring-scrollview.git#master",
+      "react-native-spring-scrollview": "^2.0.21",
+      "react-navigation": "^3.5.1"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.7.5",
+      "@babel/runtime": "^7.7.6",
+      "@react-native-community/eslint-config": "^0.0.3",
+      "babel-jest": "^24.5.0",
+      "eslint": "^5.15.3",
+      "jest": "^24.5.0",
+      "metro-react-native-babel-preset": "^0.53.1",
+      "react-test-renderer": "16.8.3"
+    },
+    "jest": {
+      "preset": "react-native"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

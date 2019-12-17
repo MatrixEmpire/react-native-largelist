@@ -9,16 +9,15 @@
   },
   "dependencies": {
     "lottie-react-native": "^2.6.0",
-    "react": "16.8.3",
-    "react-native": "0.59.2",
-    "react-native-gesture-handler": "^1.1.0",
-    "react-native-largelist-v3": "^3.0.14",
-    "react-native-spring-scrollview": "^2.0.21",
+    "react": "16.9.0",
+    "react-native": "0.61.5",
+    "react-native-gesture-handler": "^1.5.2",
+    "react-native-spring-scrollview": "git+https://github.com/MatrixEmpire/react-native-spring-scrollview-component.git#master",
     "react-navigation": "^3.5.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.0",
-    "@babel/runtime": "^7.4.2",
+    "@babel/core": "^7.7.5",
+    "@babel/runtime": "^7.7.6",
     "@react-native-community/eslint-config": "^0.0.3",
     "babel-jest": "^24.5.0",
     "eslint": "^5.15.3",

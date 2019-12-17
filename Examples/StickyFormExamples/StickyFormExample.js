@@ -22,8 +22,8 @@ export class StickyFormExample extends React.Component {
   render() {
     return (
       <StickyForm
-        style={{ backgroundColor: "white" }}
-        contentStyle={{ alignItems: "flex-start", width: "200%" }}
+        style={{ backgroundColor: "white" , width: '100%'}}
+        contentStyle={{ alignItems: "flex-start", width: "300%" }}
         data={data}
         ref={ref => (this._list = ref)}
         heightForSection={() => 40}
@@ -111,6 +111,7 @@ const styles = StyleSheet.create({
   },
   text: {
     flex: 1,
+    // width: 200,
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "white",
@@ -118,11 +119,12 @@ const styles = StyleSheet.create({
     borderColor: "#EEE"
   },
   row: {
-    flex: 1,
-    flexDirection: "row"
+    flexDirection: "row",
+    position: 'relative'
   },
   headerText: {
     flex: 1,
+    // width: 200,
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#EEE",
@@ -132,6 +134,7 @@ const styles = StyleSheet.create({
   },
   titleText: {
     flex: 1,
+    // width: 200,
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "gray",

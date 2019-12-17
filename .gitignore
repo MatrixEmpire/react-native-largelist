@@ -1,4 +1,5 @@
 node_modules/
+**/*/Pods/
 **/*.xcodeproj/xcuserdata/
 **/*.xcodeproj/xcshareddata/
 ios/build/
